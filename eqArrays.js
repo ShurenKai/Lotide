@@ -5,7 +5,6 @@ const eqArrays = function(arr1, arr2) {
       bool = true;
     } else {
       bool = false;
-      process.exit();
     }
   }
   return bool;
@@ -18,3 +17,4 @@ const assertEqual = function(actual, expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected} `);
   }
 };
+
