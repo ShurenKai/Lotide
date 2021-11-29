@@ -1,12 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if(actual !== expected){
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} != ${expected}`)
-  }
-  else if(actual === expected){
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected} `)
-  }
-};
-
 //return a truthy value is key is found
 //return undefined if key isn't found 
 
