@@ -11,10 +11,17 @@ const assertEqual = function(actual, expected) {
 //return undefined if key isn't found 
 
 const findKey = (obj, callback) => {
+  let included = true
   for(let title in obj){
     if(callback(obj[title])){
       return title
     }
+    else{
+      included = false
+    }
+  }
+  if(!included){
+    return undefined
   }
 }
 
