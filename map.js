@@ -1,25 +1,3 @@
-const eqArrays = function(arr1, arr2) {
-  let bool = true;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] === arr2[i]) {
-      bool = true;
-    } else {
-      bool = false;
-      break
-    }
-  }
-  return bool;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  let output = eqArrays(arr1, arr2);
-  if (output) {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} != ${arr2}`);
-  }
-};
-
 const words = ["ground", "control", "to", "major", "tom"];
 const animals = ['dogs', 'cats', 'hamsters']
 const spooksItems = ['chair', 'tree', 'bed']
@@ -54,9 +32,9 @@ let myMap = new Map([
   [3, 'three'],
 ])
 
-console.log(myMap)
+module.exports = map;
 
-assertArraysEqual(resultAnimal, ['d', 'c', 'h'])
-assertArraysEqual(resultSpook, ['c', 't', 'b'])
-assertArraysEqual(names, ['milo', 'carrot', 'apricot', 'Cloud Melon'])
-assertArraysEqual(myMap, Object)
+// assertArraysEqual(resultAnimal, ['d', 'c', 'h'])
+// assertArraysEqual(resultSpook, ['c', 't', 'b'])
+// assertArraysEqual(names, ['milo', 'carrot', 'apricot', 'Cloud Melon'])
+// assertArraysEqual(myMap, Object)

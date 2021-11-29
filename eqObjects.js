@@ -1,12 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if(actual !== expected){
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} != ${expected}`)
-  }
-  else if(actual === expected){
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected} `)
-  }
-};
-
 const eqObjects = function(object1, object2) {
   const firstKeys = Object.keys(object1)
   const secondKeys = Object.keys(object2)
@@ -26,16 +17,18 @@ const eqObjects = function(object1, object2) {
   return true
 };
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-let v = eqObjects(ab, ba); // => true
-assertEqual(v, true)
+module.exports = eqObjects;
 
-const abc = { a: "1", b: "2", c: "3" };
-let x = eqObjects(ab, abc); // => false
-assertEqual(x, false)
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// let v = eqObjects(ab, ba); // => true
+// assertEqual(v, true)
 
-const aw = {'hello': 'hello', 'goodbye': 'hello'}
-const ah = {'hello': 'hello', 'goodbye': 'goodbye'}
-let y = eqObjects(aw, ah)
-assertEqual(y, false)
+// const abc = { a: "1", b: "2", c: "3" };
+// let x = eqObjects(ab, abc); // => false
+// assertEqual(x, false)
+
+// const aw = {'hello': 'hello', 'goodbye': 'hello'}
+// const ah = {'hello': 'hello', 'goodbye': 'goodbye'}
+// let y = eqObjects(aw, ah)
+// assertEqual(y, false)
