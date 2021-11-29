@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@shurenkai/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "created for a LHL project, these are functions that will help track your everyday array, string, and object basics!",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ShurenKai/Lotide.git"
   },
-  "author": "",
+  "author": "Cassie/Ren Chen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ShurenKai/Lotide/issues"
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "lotide": "^1.0.1"
   }
 }
