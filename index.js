@@ -16,20 +16,20 @@ const assertObjectsEqual = require('./assertObjectsEqual');
 const countOnly = require('./countOnly');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  eqArrays: eqArrays,
-  assertEqual: assertEqual,
-  letterPositions: letterPositions,
-  findKeyByValue: findKeyByValue,
-  eqObjects: eqObjects,
-  map: map,
-  without: without,
-  takeUntil: takeUntil,
-  findKey: findKey,
-  countLetters: countLetters,
-  assertObjectsEqual: assertObjectsEqual,
-  countOnly: countOnly
+  head,
+  tail,
+  middle,
+  assertArraysEqual,
+  eqArrays,
+  assertEqual,
+  letterPositions,
+  findKeyByValue,
+  eqObjects,
+  map,
+  without,
+  takeUntil,
+  findKey,
+  countLetters,
+  assertObjectsEqual,
+  countOnly
 };
