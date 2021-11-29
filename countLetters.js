@@ -17,11 +17,11 @@ const countLetters = (str) => {
   for (let letter of letters) {
     if (!alreadyUsed.includes(letter)) {
       alreadyUsed.push(letter)
-      output.[letter] = 1
+      output[letter] = 1
       console.log(output[letter])
     }
     else if (alreadyUsed.includes(letter)) {
-      output.[letter] = output.[letter] + 1
+      output[letter] = output[letter] + 1
     }
   }
   return output

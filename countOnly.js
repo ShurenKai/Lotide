@@ -20,10 +20,10 @@ const countOnly = function(allItems, itemsToCount) {
   for(let name of firstNames) {
     if(keysItems.includes(name) && !nameUsed.includes(name)){
       nameUsed.push(name)
-      output.[name] = 1
+      output[name] = 1
     }
     else if(nameUsed.includes(name)){
-      output.[name] = output.[name] + 1
+      output[name] = output[name] + 1
     }
   }
   return output
@@ -43,6 +43,8 @@ const firstNames = [
 ];
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+
+console.log(result1)
 
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);

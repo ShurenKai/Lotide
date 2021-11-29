@@ -5,6 +5,7 @@ const eqArrays = function(arr1, arr2) {
       bool = true;
     } else {
       bool = false;
+      return bool
     }
   }
   return bool;
